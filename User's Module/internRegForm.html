@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="./internRegForm.css">
+    <link rel="stylesheet" href="./memberRegForm.css">
 </head>
 <body>
-    <form id="studForm">
+    <form id="internForm">
         <div class="formHeader">
             <h2>BTF Intership Registration Form</h2>
         </div>
-        <div class="catego" style="width: 20%;">
-            <select id="category" required>
-                <option value="">Select Type</option>
-                <option value="intern">Student</option>
-                <option value="member">Corp Member</option>
-              </select>
+        <h4>Category of Internship?</h4>
+        <div class="catego">
+            <label for="student">ITF Student:</label>
+            <input type="radio" name="category" value="student" id="student">
+            <label for="corpMember">NYSC Corp Member:</label>
+            <input type="radio" name="category" value="corpMember" id="corpMember">
+
         </div>
-      <div id="orgFields" style="display: none;" >
+      <div id="studentForm" class="hidden" >
         <div class="persnalInfo">
           <h3>Personal Information</h3>
           <div class="inputContainer">
@@ -128,13 +129,13 @@
         </div> 
     </div>
       
-    <div id="batchFields" style="display: none;">
+    <div id="corpMemberForm" class="hidden">
        
     </div>
 
       <button type="submit">Submit</button>
   
     </form>
-    <script src="/intern.js"></script>
+    <script src="intern.js"></script>
 </body>
-</html>0
+</html>

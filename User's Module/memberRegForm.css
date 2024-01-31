@@ -10,7 +10,7 @@ body{
     height: 100%;
     color:  #383636;
 }
-#memForm, #studForm{
+#memForm, #internForm{
     float: left;
     width: 80%;
     margin: 1% 10%;
@@ -60,9 +60,19 @@ select:focus{
     outline: 0.5px solid green;
     border:0.5px solid green;
 }
-.subm{
-    float: left;
-    width: 96%;
-    padding: 2%;
-
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+}
+.visible {
+    display: block;
 }

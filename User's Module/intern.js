@@ -1,14 +1,25 @@
-const form = document.getElementById('dataBankForm');
-const orgFields = document.getElementById ('orgFields');
-const batchFields = document.getElementById('batchFields');
+    const studentRadio = document.getElementById('student');
+    const corpMemberRadio = document.getElementById('corpMember');
+    const studentForm = document.getElementById('studentForm');
+    const corpMemberForm = document.getElementById('corpMemberForm');
 
-category.addEventListener('change', () => {
-  if (category.value === 'intern') {
-    orgFields.style.display = 'block';
-    batchFields.style.display = 'none';
-  } else  {
-    orgFields.style.display = 'none';
-    batchFields.style.display = 'block';
-  } 
-
-});
+    studentRadio.addEventListener('click', function(){
+      if (studentRadio.checked) {
+          studentForm.classList.remove('hidden');
+          corpMemberForm.classList.add('hidden');
+      } else if (corpMemberRadio.checked) {
+          studentForm.classList.add('hidden');
+          corpMemberForm.classList.remove('hidden');
+      }
+  }
+    );
+    corpMemberRadio.addEventListener('click', function(){
+      if (studentRadio.checked) {
+          studentForm.classList.remove('hidden');
+          corpMemberForm.classList.add('hidden');
+      } else if (corpMemberRadio.checked) {
+          studentForm.classList.add('hidden');
+          corpMemberForm.classList.remove('hidden');
+      }
+  }
+    );
