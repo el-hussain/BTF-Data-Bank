@@ -1,0 +1,101 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    color:  #383636;
+
+}
+#header{
+    width: 80%;
+    padding: 2% 10% 3%;
+    border-bottom: 1px solid  #d4d4d4ee;
+}
+.home{ 
+    width: 80%;
+    float: left;
+}
+.home a{
+    color: #383434;
+    text-decoration: none;
+}
+.btfName{
+    width: 20%;
+    float: left;
+    color:  #383636;
+}
+
+  /*styling login form container */
+.form-container, .loginNote, .forgetPassw{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+}
+  /*styling login form*/
+.form-container form, .loginNote span{
+    background-color:white;
+    width:26%;
+    padding: 2%;
+    border: 1px solid #d4d4d4ee;
+}
+
+.loginNote{
+    margin-top: 5%;
+    border-bottom: 0.1px;
+}
+
+  /*styling login form input i.e Email and password*/
+.input1, .input2{
+    float: left;
+    width: 94%;
+    margin: 0.5%;
+    border: none;
+    appearance: none;
+    outline: none; 
+    padding: 3%;
+    background-color: #ebf0f5;
+    border-radius: 5px;
+  
+}
+.input1{
+    margin-bottom: 5%;
+}
+/*Styling forgetPassowrd link*/
+.forgetPassw{
+    margin-top: 2%;
+}
+.forgetPassw a{
+    color: black;
+    text-decoration-line: none;
+    font-size: small;
+}
+/*Adding hover to forgetPassowrd link*/
+a:hover{
+    color: #007bff;;
+}
+/*Styling login button*/
+.button1{
+    width: 100%;
+    background-color: #007bff;;
+    border-style: none;
+    color: white;
+    padding: 3%;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+
+}
+/*Adding hover to login button*/
+button:hover{
+    opacity:1;
+} 
+

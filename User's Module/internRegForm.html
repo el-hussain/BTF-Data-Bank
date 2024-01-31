@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./internRegForm.css">
+</head>
+<body>
+    <form id="studForm">
+        <div class="formHeader">
+            <h2>BTF Intership Registration Form</h2>
+        </div>
+        <div class="catego" style="width: 20%;">
+            <select id="category" required>
+                <option value="">Select Type</option>
+                <option value="intern">Student</option>
+                <option value="member">Corp Member</option>
+              </select>
+        </div>
+      <div id="orgFields" style="display: none;" >
+        <div class="persnalInfo">
+          <h3>Personal Information</h3>
+          <div class="inputContainer">
+              <label for="firstName">First Name</label><br>
+              <input type="text" id="firstName" placeholder="First Name" required>
+          </div>
+          <div class="inputContainer">
+              <label for="middleName">Middle Name</label><br>
+              <input type="text" id="middleName" placeholder="Middle Name" required>
+          </div>
+          <div class="inputContainer">
+              <label for="surname">Surname</label><br>
+              <input type="text" id="surname" placeholder="Surname" required>
+          </div>
+          <div class="inputContainer">
+              <label for="dob">Date of Birth</label><br>
+              <input type="date" id="dob"  required>
+          </div>
+          <div class="inputContainer">
+              <label for="gender">Gender</label><br>
+              <select id="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+              </select>
+          </div>
+          <div class="inputContainer">
+              <label for="maritals">Marrital Status</label><br>
+              <select id="maritals" required>
+                  <option value="">Select Marital Status</option>
+                  <option value="male">Single</option>
+                  <option value="female">Married</option>
+                  <option value="other">Other</option>
+              </select>
+          </div>
+          <div class="inputContainer">
+              <label for="nationality">Nationality</label><br>
+              <input type="text"  id="nationality" placeholder="Nationality">
+          </div>
+          <div class="inputContainer">
+              <label for="state">State of Origin</label>
+              <input type="text" id="state" placeholder="State of Origin">
+          </div>
+          <div class="inputContainer">
+              <label for="lga">Local Government Area</label>
+              <input type="text" id="lga" placeholder="LGA">
+          </div>
+          <div class="inputContainer">
+              <label for="telphone">Phone Number</label>
+              <input type="text" id="telphone" placeholder="+234 9034361056">
+          </div>
+          <div class="inputContainer">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Email Address">
+          </div>
+          <div class="inputContainer">
+              <label for="nin">National Identity Number</label>
+              <input type="text" id="nin" placeholder="NIN">
+          </div>
+        </div> 
+        <div class="contactAdd">
+            <h3>Contact Address</h3>
+            <div class="inputContainer" style="width: 48%;">
+                <label for="street">Street</label><br>
+                <input type="text" id="street" placeholder="e.g No 27 Late Mallam Ibrahim Street, Gomari Airport">
+            </div>
+            <div class="inputContainer" style="width: 25%;">
+                <label for="city">City</label><br>
+                <input type="text" id="city" placeholder="e.g Maiduguri" required style="height: 28px">
+            </div>
+            <div class="inputContainer" style="width: 25%;">
+                <label for="state">State/Province</label><br>
+                <input type="text" id="state" placeholder="e.g Borno State" required style="height: 28px">
+            </div>
+        
+        </div> 
+        <div class="persnalInfo">
+            <h3>School Information</h3>
+            <div class="inputContainer">
+                <label for="school">School Name</label><br>
+                <input type="text" id="school" placeholder="e.g University of Maidugri" required>
+            </div>
+            <div class="inputContainer">
+                <label for="department">Department</label><br>
+                <input type="text" id="department" placeholder="e.g Mathematical Scinces" required>
+            </div>
+            <div class="inputContainer">
+                <label for="course">Course of Study</label><br>
+                <input type="text" id="course" placeholder="e.g B.Sc. Computer Science" required>
+            </div>
+            <div class="inputContainer">
+                <label for="schooid">ID No.</label><br>
+                <input type="text"  id="schoooid" placeholder="School Matric or ID No.">
+            </div>
+            <div class="inputContainer">
+                <label for="level">Current Level</label><br>
+                <select id="gender" required>
+                    <option value="">Select Level</option>
+                    <option value="100">100 Level</option>
+                    <option value="200">200 Level</option>
+                    <option value="300">300 Level</option>
+                    <option value="400">300 Level</option>
+                    <option value="500">500 Level </option>
+                </select>
+            </div>
+     
+        </div> 
+    </div>
+      
+    <div id="batchFields" style="display: none;">
+       
+    </div>
+
+      <button type="submit">Submit</button>
+  
+    </form>
+    <script src="/intern.js"></script>
+</body>
+</html>0

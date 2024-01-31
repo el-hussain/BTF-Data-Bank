@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    color:  #383636;
+}
+#header{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid  #d4d4d4ee;
+}
+.logo{
+    width: 5%;
+    float: left;
+    padding: 1%;
+}
+.logo img{
+    width: 80px;
+}
+.btfName{
+    width:30%;
+    float: left;
+    padding: 1%;
+}
