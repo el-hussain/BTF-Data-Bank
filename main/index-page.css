@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    padding: 18px 62px;
+}
+
+.nav-bar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+.menu{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    border-radius: 15px;
+    padding: 10px 16px;
+    color: white;
+}
+button{
+    border: none;
+    padding: 12px 24px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn{
+    background-color: white; 
+    color: black;
+    margin-right: 10px;
+}
+.menu li{
+    padding: 5px 10px;
+    margin: 10px 0; 
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.menu li:hover,.active{
+    background-color: white;
+    color: black;
+}
+section{
+    display: flex;
+    padding: 10px 62px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;   
+}
+h1{
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 16px;
+}
+.Hero{
+    font-weight: 900;
+    
+}
+.btn-hero{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+.side img{
+    height: 350px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-image: url(image1.jpg);
+}
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
