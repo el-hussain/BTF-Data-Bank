@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member</title>
-    <link rel="stylesheet" href="./memberRegForm.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
@@ -87,7 +87,23 @@
                 <input type="text" id="state" placeholder="e.g Borno State" required style="height: 28px">
             </div>
             
-        </div> 
+        </div>
+        <div class="infoContainer">
+            <h3>Guarantor's Information</h3>
+            <div class="inputContainer">
+                <label for="guarantorName">NAME<label><br>
+                <input type="text" id="guarantorName" placeholder="Guarantor Name">
+
+            </div>
+            <div class="inputContainer">
+                <label for="duration">Duration of Internship</label><br>
+                <input type="text" id="dura" placeholder="e.g 6 Months" required>
+            </div>
+            <div class="inputContainer">
+                <label for="batch">Batch</label><br>
+                <input type="text" id="batch" placeholder="e.g Batch A, 2024" required>
+            </div>     
+        </div>   
         <div class="subm">
             <input type="checkbox" name="declaration" id="declaration"> <label for="declaration">Declaration</label>
             <button type="submit">Submit</button>

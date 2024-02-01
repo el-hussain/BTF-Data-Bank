@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="./memberRegForm.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <form id="internForm">
         <div class="formHeader">
             <h2>BTF Intership Registration Form</h2>
         </div>
-        <h4>Category of Internship?</h4>
+        <h4 style="margin-bottom: 1%;">Category of Internship?</h4>
         <div class="catego">
             <label for="student">ITF Student:</label>
-            <input type="radio" name="category" value="student" id="student">
+            <input type="radio" name="category" value="student" id="student" style="margin-right: 1%;">
             <label for="corpMember">NYSC Corp Member:</label>
             <input type="radio" name="category" value="corpMember" id="corpMember">
 
         </div>
-      <div id="studentForm" class="hidden" >
-        <div class="persnalInfo">
+      <div id="studentForm">
+        <div class="infoContainer">
           <h3>Personal Information</h3>
           <div class="inputContainer">
               <label for="firstName">First Name</label><br>
@@ -80,7 +80,7 @@
               <input type="text" id="nin" placeholder="NIN">
           </div>
         </div> 
-        <div class="contactAdd">
+        <div class="infoContainer">
             <h3>Contact Address</h3>
             <div class="inputContainer" style="width: 48%;">
                 <label for="street">Street</label><br>
@@ -96,7 +96,7 @@
             </div>
         
         </div> 
-        <div class="persnalInfo">
+        <div id="studentIntern"class="infoContainer hidden">
             <h3>School Information</h3>
             <div class="inputContainer">
                 <label for="school">School Name</label><br>
@@ -126,15 +126,55 @@
                 </select>
             </div>
      
-        </div> 
+        </div>
+        <div id="nyscIntern"class="infoContainer hidden">
+            <h3>NYSC Information</h3>
+            <div class="inputContainer">
+                <label for="nyscBatch">NYSC Batch</label><br>
+                <input type="text" id="nyscBatch" placeholder="e.g 2023 C" required>
+            </div>
+            <div class="inputContainer">
+                <label for="nyscStream">Current Level</label><br>
+                <select id="nyscStream" required>
+                    <option value="">Select your stream</option>
+                    <option value="1"> Stream 1</option>
+                    <option value="2"> Stream 2 </option>
+        
+                </select>
+            </div>
+           
+            <div class="inputContainer">
+                <label for="statecode">State Code</label><br>
+                <input type="text" id="statecode" placeholder="State Code" required>
+            </div>
+        </div>  
+        <div class="infoContainer">
+            <h3>Internship Details</h3>
+            <div class="inputContainer">
+                <label for="organization">Organization of Internship</label><br>
+                <select id="gender" required>
+                    <option value="">Select Organization</option>
+                    <option value="yen">Cerebro Systems</option>
+                    <option value="cerebro">Yerwa Express News</option>
+                </select>
+            </div>
+            <div class="inputContainer">
+                <label for="duration">Duration of Internship</label><br>
+                <input type="text" id="dura" placeholder="e.g 6 Months" required>
+            </div>
+            <div class="inputContainer">
+                <label for="batch">Intership Batch</label><br>
+                <input type="text" id="batch" placeholder="e.g Batch A, 2024" required>
+            </div>     
+        </div>         
     </div>
       
-    <div id="corpMemberForm" class="hidden">
-       
     </div>
-
-      <button type="submit">Submit</button>
-  
+    <div class="subm">
+        <input type="checkbox" name="declaration" id="declaration"> <label for="declaration">Declaration</label>
+        <button type="submit">Submit</button>
+        
+    </div>
     </form>
     <script src="intern.js"></script>
 </body>

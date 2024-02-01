@@ -1,7 +1,7 @@
     const studentRadio = document.getElementById('student');
     const corpMemberRadio = document.getElementById('corpMember');
-    const studentForm = document.getElementById('studentForm');
-    const corpMemberForm = document.getElementById('corpMemberForm');
+    const studentForm = document.getElementById('studentIntern');
+    const corpMemberForm = document.getElementById('nyscIntern');
 
     studentRadio.addEventListener('click', function(){
       if (studentRadio.checked) {
