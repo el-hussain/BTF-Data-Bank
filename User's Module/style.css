@@ -10,6 +10,19 @@ body{
     height: 100%;
     color:  #383636;
 }
+#header{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    border-bottom: 1px solid  #c9b8b8ee;
+    position: fixed;
+    background-color: #c7c5c5ee;
+}
+img{
+    width: 500px;
+}
+
 #memForm, #internForm{
     float: left;
     width: 80%;
@@ -34,7 +47,7 @@ body{
 }
 .persnalInfo h3, .contactAdd h3, .infoContainer h3{
     width: 19%;
-    position: relative;
+    position:relative;
     bottom: 33px;
     background-color: white;
 }

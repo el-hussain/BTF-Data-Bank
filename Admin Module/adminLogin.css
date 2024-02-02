@@ -23,6 +23,9 @@ body{
     color: #383434;
     text-decoration: none;
 }
+a:hover{
+    color: #007bff;
+}
 .btfName{
     width: 20%;
     float: left;
