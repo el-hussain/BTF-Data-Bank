@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>BTF Internship</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="../Admin Module/Asset/btf-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/User's Module/Assets/btf-logo.png" type="image/x-icon">
 </head>
 <body>
     <div id="header">
-        <a href="#"><img src="./Assets/btf-name.png" alt=""></a>
+        <a href="#"><img src="/User's Module/Assets/btf-name.png" alt=""></a>
     </div>
     <div id="body"></div>
     <form id="internForm">
       
-        <h4 style="margin-bottom: 2%; margin-top: 10%;">Category of Internship?</h4>
+        <h4 style="margin-bottom: 2%; margin-top: 8%;">Category of Internship?</h4>
         <div class="catego">
             <label for="student">ITF Student:</label>
             <input type="radio" name="category" value="student" id="student" style="margin-right: 2%;">
             <label for="corpMember">NYSC Corp Member:</label>
             <input type="radio" name="category" value="corpMember" id="corpMember">
 
+        </div>
+        <div class="pictureContainer">
+            <img id="output" src="/User's Module/Assets/avata.svg" alt="Preview Image" style="max-width: 150px; max-height: 150px;"><br>
+            <input type="file" accept="image/*" onchange="previewImage(event)">
         </div>
       <div id="studentForm">
         <div class="infoContainer">

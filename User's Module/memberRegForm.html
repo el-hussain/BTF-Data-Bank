@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>BTF Membership</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/User's Module/Assets/btf-logo.png" type="image/x-icon">
+    <script src="intern.js"></script>
 </head>
 <body>
-    
-    <form action="" id="memForm">
-        <div class="formHeader">
-            <h2>BTF Membership Registration Form</h2>
+    <div id="header">
+        <a href="#"><img src="/User's Module/Assets/btf-name.png" alt=""></a>
+    </div>
+    <form action="" id="memForm" style="margin-top:6%;">
+        <div class="pictureContainer">
+            
+            <img id="output" src="/User's Module/Assets/avata.svg" alt="Preview Image" style="max-width: 150px; max-height: 150px;"><br>
+            <input type="file" accept="image/*" onchange="previewImage(event)">
         </div>
+    
         <div class="persnalInfo">
             <h3>Personal Information</h3>
             <div class="inputContainer">
                 <label for="firstName">First Name</label><br>
-                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="firstName" placeholder="First Name"  required>
             </div>
             <div class="inputContainer">
                 <label for="middleName">Middle Name</label><br>
@@ -89,19 +96,19 @@
             
         </div>
         <div class="infoContainer">
-            <h3>Guarantor's Information</h3>
+            <h3 style="width: 20%;">Guarantor Information</h3>
             <div class="inputContainer">
-                <label for="guarantorName">NAME<label><br>
+                <label for="guarantorName">Name<label><br>
                 <input type="text" id="guarantorName" placeholder="Guarantor Name">
 
             </div>
             <div class="inputContainer">
-                <label for="duration">Duration of Internship</label><br>
-                <input type="text" id="dura" placeholder="e.g 6 Months" required>
+                <label for="guarantorPhone">Phone Number</label><br>
+                <input type="text" id="uarantorPhone" placeholder="Guarantor's Phone Number" required>
             </div>
             <div class="inputContainer">
-                <label for="batch">Batch</label><br>
-                <input type="text" id="batch" placeholder="e.g Batch A, 2024" required>
+                <label for="guarantorAddress">Address</label><br>
+                <input type="text" id="guarantorAddress" placeholder="Guarantor's Address" required>
             </div>     
         </div>   
         <div class="subm">

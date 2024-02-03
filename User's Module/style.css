@@ -1,7 +1,6 @@
 *{
     margin: 0%;
-    padding: 0%;
-  
+    padding: 0%;  
 }
 body{
     float: left;
@@ -18,22 +17,22 @@ body{
     border-bottom: 1px solid  #c9b8b8ee;
     position: fixed;
     background-color: #c7c5c5ee;
+    z-index:100;   
 }
 img{
-    width: 500px;
+    width: 350px;
 }
-
 #memForm, #internForm{
     float: left;
     width: 80%;
     margin: 1% 10%;
 }
-.formHeader{
-    width: 98%;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    padding: 1%;
+
+.pictureContainer img{
+    width: 200%;
+    height: 200px;
+    border: 1px solid  #c9b8b8ee;
+    margin-top: 2%;
 }
 .persnalInfo, .contactAdd, .infoContainer{
     width: 96%;
@@ -43,7 +42,6 @@ img{
     border-radius: 5px;
     display: inline;
     margin-top: 3%;
-  
 }
 .persnalInfo h3, .contactAdd h3, .infoContainer h3{
     width: 19%;
